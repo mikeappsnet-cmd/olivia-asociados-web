@@ -19,7 +19,7 @@ const products: Product[] = [
 
 const QuoteWizard: React.FC = () => {
     const [step, setStep] = useState(1);
-    const [selectedProduct, setSelectedProduct] = useState<string>('');
+    // const [selectedProduct, setSelectedProduct] = useState<string>('');
     const [formData, setFormData] = useState({
         placa: '',
         marca: '',
@@ -34,7 +34,8 @@ const QuoteWizard: React.FC = () => {
     const progress = (step / 4) * 100;
 
     const handleProductSelect = (productId: string) => {
-        setSelectedProduct(productId);
+        // setSelectedProduct(productId);
+        console.log('Selected product:', productId);
         setTimeout(() => setStep(2), 300);
     };
 
