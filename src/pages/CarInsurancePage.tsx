@@ -23,9 +23,9 @@ const CarInsurancePage: React.FC = () => {
                             <a href="#como-funciona" className="car-link">Cómo funciona nuestro seguro de auto</a>
                         </div>
                     </div>
-                    {/* SVG Illustration Placeholder */}
+                    {/* Custom Brand Illustration */}
                     <div className="car-hero-image">
-                        <Car size={300} color="#FF0083" strokeWidth={0.5} style={{ opacity: 0.1 }} />
+                        <img src="/src/assets/illustrations/car-hero.png" alt="Auto Olivia & Asociados" style={{ width: '600px', opacity: 0.9 }} />
                     </div>
                 </div>
             </section>
