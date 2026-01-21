@@ -1,5 +1,6 @@
 import React from 'react';
 import { Car, Heart, Home, Shield, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './ProductGrid.css';
 
 interface Product {
@@ -57,9 +58,15 @@ const ProductGrid: React.FC = () => {
                             <h3 className="product-name-grid">{product.name}</h3>
                             <p className="product-description-grid">{product.description}</p>
                             <p className="product-price-grid">{product.price}</p>
-                            <a href="#contacto" className="btn-product-grid">
-                                Ver precio <ChevronRight size={18} />
-                            </a>
+                            {product.id === 'auto' ? (
+                                <Link to="/seguros/auto" className="btn-product-grid">
+                                    Ver precio <ChevronRight size={18} />
+                                </Link>
+                            ) : (
+                                <a href="#contacto" className="btn-product-grid">
+                                    Ver precio <ChevronRight size={18} />
+                                </a>
+                            )}
                         </div>
                     ))}
                 </div>
