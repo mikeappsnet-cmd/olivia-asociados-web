@@ -64,7 +64,7 @@ Inspired by Lemonade.com's clean, bold, and minimalist approach:
 
 ## 📝 License
 
-© 2024 Olivia & Asociados. All rights reserved.
+© 2026 Olivia & Asociados. All rights reserved.
 
 ## 🤝 Contributing
 
@@ -72,4 +72,4 @@ This is a private project for Olivia & Asociados.
 
 ---
 
-Built with ❤️ by Antigravity
+Built with ❤️ by Mike™
