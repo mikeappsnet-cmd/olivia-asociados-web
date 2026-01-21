@@ -2,6 +2,8 @@ import React from 'react';
 import { Car, Shield, Clock, TreePalm as Tree, ChevronRight } from 'lucide-react';
 import './CarInsurancePage.css';
 
+import carHero from '../assets/illustrations/car-hero.png';
+
 const CarInsurancePage: React.FC = () => {
     return (
         <div className="car-page">
@@ -25,7 +27,7 @@ const CarInsurancePage: React.FC = () => {
                     </div>
                     {/* Custom Brand Illustration */}
                     <div className="car-hero-image">
-                        <img src="/src/assets/illustrations/car-hero.png" alt="Auto Olivia & Asociados" style={{ width: '600px', opacity: 0.9 }} />
+                        <img src={carHero} alt="Auto Olivia & Asociados" style={{ width: '600px', opacity: 0.9 }} />
                     </div>
                 </div>
             </section>

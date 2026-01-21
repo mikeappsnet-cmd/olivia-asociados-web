@@ -3,6 +3,9 @@ import { Heart, Shield, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import './ProductGrid.css';
 
+import iconCar from '../assets/illustrations/icon-car.png';
+import iconHome from '../assets/illustrations/icon-home.png';
+
 interface Product {
     id: string;
     name: string;
@@ -17,7 +20,7 @@ const products: Product[] = [
         name: 'Seguro de Auto',
         description: 'Protege tu vehículo, pasajeros y el planeta',
         price: 'Desde S/ 80/mes',
-        icon: <img src="/src/assets/illustrations/icon-car.png" alt="Auto" width={64} />
+        icon: <img src={iconCar} alt="Auto" width={64} />
     },
     {
         id: 'vida',
@@ -31,7 +34,7 @@ const products: Product[] = [
         name: 'Seguro de Hogar',
         description: 'Cobertura para tu casa y tus cosas',
         price: 'Desde S/ 60/mes',
-        icon: <img src="/src/assets/illustrations/icon-home.png" alt="Hogar" width={64} />
+        icon: <img src={iconHome} alt="Hogar" width={64} />
     },
     {
         id: 'salud',
