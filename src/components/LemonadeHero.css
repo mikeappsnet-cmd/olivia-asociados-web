@@ -1,0 +1,89 @@
+.lemonade-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.hero-container-lemonade {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content-lemonade {
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-title-lemonade {
+    font-size: 5.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+    letter-spacing: -3px;
+}
+
+.hero-subtitle-lemonade {
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.btn-hero-lemonade {
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    background: linear-gradient(135deg, #0D1B3E 0%, #1565C0 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 60px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 12px 40px rgba(13, 27, 62, 0.25);
+}
+
+.btn-hero-lemonade:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 50px rgba(13, 27, 62, 0.35);
+}
+
+.hero-decoration {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.decoration-svg {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-title-lemonade {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtitle-lemonade {
+        font-size: 1.3rem;
+    }
+
+    .btn-hero-lemonade {
+        padding: 1.2rem 3rem;
+        font-size: 1.1rem;
+    }
+
+    .hero-decoration {
+        width: 300px;
+    }
+}

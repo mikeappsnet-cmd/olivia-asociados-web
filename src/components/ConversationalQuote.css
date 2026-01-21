@@ -1,0 +1,280 @@
+.conversational-quote {
+    min-height: 100vh;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+}
+
+.martha-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.martha-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #FF0083 0%, #FF4D9E 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 8px 24px rgba(255, 0, 131, 0.3);
+}
+
+.martha-message {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+    margin: 0;
+}
+
+.signature-line-wrapper {
+    max-width: 400px;
+    margin: 0 auto 3rem;
+    opacity: 0.6;
+}
+
+.signature-svg {
+    width: 100%;
+    height: auto;
+}
+
+.steps-container {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 400px;
+    position: relative;
+}
+
+.step-content {
+    width: 100%;
+}
+
+/* Large Input (Step 1) */
+.input-group-large {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-icon {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #FF0083;
+}
+
+.input-large {
+    width: 100%;
+    padding: 1.5rem 1.5rem 1.5rem 4rem;
+    font-size: 1.5rem;
+    border: 3px solid #f0f0f0;
+    border-radius: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.input-large:focus {
+    border-color: #FF0083;
+    box-shadow: 0 0 0 4px rgba(255, 0, 131, 0.1);
+}
+
+/* Product Cards (Step 2) */
+.product-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.product-card-lemonade {
+    background: #FFFFFF;
+    border: 3px solid #f0f0f0;
+    border-radius: 20px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.product-card-lemonade:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.product-card-lemonade.selected {
+    border-color: #FF0083;
+    background: rgba(255, 0, 131, 0.02);
+}
+
+.product-icon-lemonade {
+    color: #FF0083;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product-card-lemonade h3 {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    margin: 0;
+    font-weight: 600;
+}
+
+.check-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #FF0083;
+}
+
+/* Standard Inputs (Step 3) */
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+}
+
+.input-standard {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-standard:focus {
+    border-color: #FF0083;
+    box-shadow: 0 0 0 3px rgba(255, 0, 131, 0.1);
+}
+
+/* Toggle Group */
+.toggle-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.toggle-btn.active {
+    background: #FF0083;
+    color: white;
+    border-color: #FF0083;
+}
+
+.toggle-btn:hover:not(.active) {
+    border-color: #FF0083;
+}
+
+/* Error Text */
+.error-text {
+    color: #FF0083;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Buttons */
+.btn-lemonade {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-lemonade:hover:not(:disabled) {
+    background: #2a2a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.btn-lemonade:disabled {
+    background: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+.btn-primary-lemonade {
+    background: linear-gradient(135deg, #FF0083 0%, #FF4D9E 100%);
+}
+
+.btn-primary-lemonade:hover:not(:disabled) {
+    background: linear-gradient(135deg, #E60075 0%, #FF3D8E 100%);
+}
+
+/* Progress Dots */
+.progress-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background: #FF0083;
+    transform: scale(1.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .product-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .martha-message {
+        font-size: 1.2rem;
+    }
+
+    .input-large {
+        font-size: 1.2rem;
+    }
+
+    .product-card-lemonade {
+        padding: 2rem 1rem;
+    }
+}

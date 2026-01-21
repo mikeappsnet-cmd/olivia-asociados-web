@@ -1,0 +1,105 @@
+.social-proof-lemonade {
+    padding: 8rem 0;
+    background: #F5F7FA;
+}
+
+.social-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.social-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+}
+
+.rating-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stars-large {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.rating-text {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.testimonials-carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.testimonial-card-lemonade {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card-lemonade:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-header-lemonade {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.avatar-lemonade {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0D1B3E 0%, #1565C0 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.user-info-lemonade h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.user-info-lemonade p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #00B0FF;
+}
+
+.testimonial-text-lemonade {
+    color: #4a4a4a;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .social-title {
+        font-size: 2rem;
+    }
+
+    .testimonials-carousel {
+        grid-template-columns: 1fr;
+    }
+}

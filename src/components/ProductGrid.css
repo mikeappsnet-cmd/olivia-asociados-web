@@ -1,0 +1,102 @@
+.product-grid-lemonade {
+    padding: 8rem 0;
+    background: white;
+}
+
+.products-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.products-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.products-subtitle {
+    font-size: 1.3rem;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card-grid {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product-card-grid:hover {
+    transform: translateY(-8px);
+    border-color: #00B0FF;
+    box-shadow: 0 12px 40px rgba(0, 176, 255, 0.15);
+}
+
+.product-icon-grid {
+    color: #00B0FF;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.product-name-grid {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.product-description-grid {
+    color: #6a6a6a;
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.product-price-grid {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0D1B3E;
+    margin-bottom: 2rem;
+}
+
+.btn-product-grid {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    background: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-product-grid:hover {
+    background: #2a2a2a;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .products-title {
+        font-size: 2rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
